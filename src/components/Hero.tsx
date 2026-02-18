@@ -40,8 +40,8 @@ const Hero = () => {
               Voir mes projets
             </button>
             <a
-              href="/CV_Danklou_Modeste.pdf"
-              download="CV_Danklou_Modeste.pdf"
+              href="/CV_DANKLOU MODESTE.pdf"
+              download="CV_DANKLOU MODESTE.pdf"
               className="px-8 py-3 border border-gold text-gold font-medium rounded font-body hover:bg-gold/10 transition-colors flex items-center gap-2"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
