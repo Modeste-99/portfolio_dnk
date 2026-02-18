@@ -1,3 +1,5 @@
+import ContactForm from "@/components/ContactForm";
+
 const Contact = () => {
   return (
     <section id="contact" className="py-24 bg-surface">
@@ -64,44 +66,9 @@ const Contact = () => {
             </div>
           </div>
 
-          <form
-            onSubmit={(e) => { e.preventDefault(); alert("Message envoyé ! (Fonctionnalité à connecter)"); }}
-            className="space-y-5"
-          >
-            <div>
-              <label className="block text-xs text-gold uppercase tracking-widest font-body mb-2">Nom complet</label>
-              <input
-                type="text"
-                required
-                className="w-full bg-background border border-border rounded-lg px-4 py-3 text-sm font-body focus:outline-none focus:border-gold transition-colors"
-                placeholder="Votre nom"
-              />
-            </div>
-            <div>
-              <label className="block text-xs text-gold uppercase tracking-widest font-body mb-2">Email</label>
-              <input
-                type="email"
-                required
-                className="w-full bg-background border border-border rounded-lg px-4 py-3 text-sm font-body focus:outline-none focus:border-gold transition-colors"
-                placeholder="votre@email.com"
-              />
-            </div>
-            <div>
-              <label className="block text-xs text-gold uppercase tracking-widest font-body mb-2">Message</label>
-              <textarea
-                required
-                rows={5}
-                className="w-full bg-background border border-border rounded-lg px-4 py-3 text-sm font-body focus:outline-none focus:border-gold transition-colors resize-none"
-                placeholder="Votre message..."
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full py-3 gradient-gold text-primary-foreground font-medium font-body rounded-lg hover:opacity-90 transition-opacity"
-            >
-              Envoyer le message
-            </button>
-          </form>
+          <div>
+            <ContactForm />
+          </div>
         </div>
       </div>
     </section>
