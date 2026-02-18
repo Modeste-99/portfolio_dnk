@@ -10,8 +10,8 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
             <p className="font-body text-muted-foreground leading-relaxed mb-6 text-lg">
-              Je suis <span className="text-foreground font-medium">Danklou Modeste</span>, actuellement en formation de
-              <span className="text-gold"> Référent Digital</span> au Centre ADN Golf 1 à Lomé, Togo.
+              Je suis <span className="text-foreground font-medium">Danklou Modeste</span>, 
+              <span className="text-gold"> Référent Digital</span> diplômé au Centre ADN (Académie Digitale Numérique) du Golf 1 à Lomé, Togo.
               Passionné par les technologies du marketing numérique et la communication digitale.
             </p>
             <p className="font-body text-muted-foreground leading-relaxed mb-8">

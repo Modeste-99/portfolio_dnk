@@ -1,5 +1,6 @@
 import heroBg from "@/assets/hero-bg.jpg";
 import ppmomo from "/ppmomo1.png";
+import SocialLinks from "@/components/SocialLinks";
 
 const Hero = () => {
 
@@ -55,6 +56,10 @@ const Hero = () => {
             >
               Me contacter
             </a>
+          </div>
+          
+          <div className="mt-8">
+            <SocialLinks size="default" className="justify-center md:justify-start" />
           </div>
         </div>
       </div>
