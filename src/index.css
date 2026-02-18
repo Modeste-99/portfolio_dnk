@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@300;400;500;600&display=swap');
+
+@layer base {
+  :root {
+    --background: 220 25% 7%;
+    --foreground: 45 20% 92%;
+
+    --card: 220 20% 11%;
+    --card-foreground: 45 20% 92%;
+
+    --popover: 220 20% 11%;
+    --popover-foreground: 45 20% 92%;
+
+    --primary: 42 88% 55%;
+    --primary-foreground: 220 25% 7%;
+
+    --secondary: 220 15% 16%;
+    --secondary-foreground: 45 20% 92%;
+
+    --muted: 220 15% 14%;
+    --muted-foreground: 220 10% 55%;
+
+    --accent: 42 88% 55%;
+    --accent-foreground: 220 25% 7%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 18%;
+    --input: 220 15% 16%;
+    --ring: 42 88% 55%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 220 25% 7%;
+    --sidebar-foreground: 45 20% 92%;
+    --sidebar-primary: 42 88% 55%;
+    --sidebar-primary-foreground: 220 25% 7%;
+    --sidebar-accent: 220 15% 14%;
+    --sidebar-accent-foreground: 45 20% 92%;
+    --sidebar-border: 220 15% 18%;
+    --sidebar-ring: 42 88% 55%;
+
+    /* Custom tokens */
+    --gold: 42 88% 55%;
+    --gold-dim: 42 60% 40%;
+    --navy: 220 25% 7%;
+    --surface: 220 20% 11%;
+    --surface-2: 220 15% 16%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(220 25% 5%), hsl(220 30% 10%));
+    --gradient-gold: linear-gradient(135deg, hsl(42 88% 55%), hsl(35 80% 45%));
+    --shadow-gold: 0 0 30px hsl(42 88% 55% / 0.2);
+    --shadow-card: 0 8px 32px hsl(220 25% 3% / 0.6);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .text-gold {
+    color: hsl(var(--gold));
+  }
+
+  .bg-gold {
+    background: hsl(var(--gold));
+  }
+
+  .bg-surface {
+    background: hsl(var(--surface));
+  }
+
+  .bg-surface-2 {
+    background: hsl(var(--surface-2));
+  }
+
+  .border-gold {
+    border-color: hsl(var(--gold));
+  }
+
+  .shadow-gold {
+    box-shadow: var(--shadow-gold);
+  }
+
+  .gradient-gold {
+    background: var(--gradient-gold);
+  }
+
+  .gradient-text {
+    background: var(--gradient-gold);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
